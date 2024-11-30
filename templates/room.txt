@@ -1,0 +1,19 @@
+{% extends 'main.html' %}
+<!-- {% include 'nav.html' %} -->
+
+{% block content %}
+
+<h1>welcome to the room</h1>
+
+<div>
+    <div>
+        {% for room in uday %}
+        <div>
+           <h4> {{room.id}} ==> {{room.name}} </h4>
+        </div>
+        {% endfor %}
+    </div>
+  
+</div>
+
+{% endblock %}
